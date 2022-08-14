@@ -14,11 +14,11 @@ USER_COLUMNS = ["UserId","RegistrationDate",
 EVENT_COLUMNS=["UserId", "SubscriptionPlan", "EventDate", "EventType", "EventId"]
 
 # generate random date in YYYYMMDD format
-def random_date(start_date, end_date, offset=0):
+def random_date(start_date, end_date):
     time_between_dates = end_date - start_date
     days_between_dates = time_between_dates.days
     random_number_of_days = random.randrange(days_between_dates)
-    return start_date + datetime.timedelta(days=random_number_of_days+offset)
+    return start_date + datetime.timedelta(days=random_number_of_days)
 
 
 def generate_synthetic_data(counter):
