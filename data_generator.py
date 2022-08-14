@@ -28,7 +28,7 @@ def generate_synthetic_data(counter):
     registration_date = random_date(start_date,end_date)
     country = COUNTRY[random.randrange(0,5)]
     event_id = random.randrange(1000000000,1000000000000000)
-    user_foreign_key = random.randrange(1000)
+    user_foreign_key = random.randrange(100) # limiting to 10% of set to allow repetition
     event_type = EVENT_TYPE[random.randrange(0,2)]
     event_date = random_date(registration_date,end_date) # events occur after start date
     event_sub_plan = subscription
@@ -46,7 +46,7 @@ for i in range(1000):
     event_records.append(event)
 
 users = pd.DataFrame(user_records, columns=USER_COLUMNS)
-events = pd.DataFrame(event, columns=EVENT_COLUMNS)
+events = pd.DataFrame(event_records, columns=EVENT_COLUMNS)
 users.to_csv('data/users.csv')
 events.to_csv('data/events.csv')
 
