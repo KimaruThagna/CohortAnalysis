@@ -31,4 +31,4 @@ COALESCE(target_events.EventDate, censoring.EventDate) - users.RegistrationDate 
 FROM user_start_dates as users, censoring LEFT JOIN first_occurence_of_target_event as target_events
 ON users.UserId = target_events.UserId
 )
-SELECT * FROM first_occurence_of_target_event
+SELECT * FROM final
