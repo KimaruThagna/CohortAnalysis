@@ -72,5 +72,5 @@ In conclusion, we have learnt about the Kaplan Meier estimator and how to employ
 4. How many years until our installed water pump fails
 
 
-Knowing about all the above with a good degree of accuracy allows a business to not only operate efficiently but to also stay ahead of competition. All using the power of data.
+Knowing about all the above with a good degree of accuracy allows a business to not only operate efficiently but to also stay ahead of competition by handling their customers or assets better. All using the power of data.
 
