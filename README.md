@@ -64,11 +64,13 @@ In the example above, we can interpret the following
 - The least probability of survival being 0.88 means the business can promise the devices will survive the SYSTEM ERROR event at day 350(roughly 1 year) with 88% confidence.
 - At day 50, there is a 0.01 probability that devices do not survive the event and hence, report an error. 
 
-In conclusion, we have learnt about the Kaplan Meier estimator and how to employ it to answer vital business questions. With such knowledge, so much more is possible. Some other applications of this technique include:
+In conclusion, we have learnt about the Kaplan Meier estimator and how to employ it to answer vital business questions around survival of events. With such knowledge, so much more is possible. Some other applications of this technique include determining:
 
 1. How many days until a customer cancels our subscription
 2. How many hours until our IoT device fails
 3. How many orders do customers make until they cancel their subscription
 4. How many years until our installed water pump fails
 
+
+Knowing about all the above with a good degree of accuracy allows a business to not only operate efficiently but to also stay ahead of competition. All using the power of data.
 
