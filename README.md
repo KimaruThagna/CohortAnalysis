@@ -23,8 +23,11 @@ UserId,RegistrationDate,EventType,EventDate,days_to_event
 After you have your time to event data, you now get to apply the Kaplan meier estimator to the data. This will generate a different dataset that is commonly known as the **survival table**. 
 
 The survival table is what is plotted and gives the survival curves that many know of. To apply the estimator, one needs a bit of an understanding of the math behind it.
+
+
 ![](images/equation.PNG)
 [Image credits](https://en.wikipedia.org/wiki/Kaplan%E2%80%93Meier_estimator)
+
 
 
 T is the total observation time. <sub>i</sub> is a point in time between 0 and the maximum t. For example, if you are looking at events over 1 year, your t value would be 365. At time t<sub>i</sub>, d<sub>i</sub> is the number of events that have happened as at time t<sub>i</sub>. In our case, this will be the number of users whose devices have reported their first error message. N<sub>i</sub> is the number of subjects that have either survived the event or are still at risk of experiencing the event as at at time t<sub>i</sub>. In our scenario, this is the number of users whose devices have survived failure or are still at risk of failing as at time t<sub>i</sub>.
