@@ -39,4 +39,4 @@ DATEDIFF(DAY,  users.RegistrationDate , COALESCE(target_events.EventDate, CAST('
 FROM user_start_dates as users LEFT JOIN first_occurence_of_target_event as target_events
 ON users.UserId = target_events.UserId
 )
-SELECT * FROM final
+SELECT * FROM final WHERE days_to_event > 0
